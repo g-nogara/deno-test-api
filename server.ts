@@ -1,5 +1,5 @@
 import { Application } from 'https://deno.land/x/oak/mod.ts'
-import router from './router.ts';
+import router from './src/router.ts';
 
 const testConn = await fetch('http://google.com').then(res => res.status);
 if (testConn != 200) {
